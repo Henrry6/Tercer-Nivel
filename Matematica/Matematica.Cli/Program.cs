@@ -11,7 +11,7 @@ namespace Matematica.Cli
             Console.WriteLine("Ingrese el segundo numero");
             var segundoNumero = Console.ReadLine();
             var calculadora = new Negocio.Calculadora();
-            var resultado = calculadora.Sumar(int.Parse(primerNumero), int.Parse(segundoNumero));
+            var resultado = calculadora.Sumar(double.Parse(primerNumero), double.Parse(segundoNumero));
             Console.WriteLine("La suma de los numeros es: " + resultado);
         }
     }

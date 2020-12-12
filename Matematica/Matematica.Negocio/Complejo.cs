@@ -2,16 +2,14 @@
 {
     public class Complejo
     {
-        private int x;
-        private int y;
 
-        public Complejo(int x, int y)
+        public Complejo(double real, double imaginario)
         {
-            this.x= x;
-            this.y = y;
+            Real= real;
+            Imaginaria = imaginario;
         }
 
-        public int Real { get; internal set; }
-        public int Imaginaria { get; internal set; }
+        public double Real { get;  set; }
+        public double Imaginaria { get;  set; }
     }
 }
