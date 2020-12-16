@@ -1,0 +1,50 @@
+﻿@model Aplication.Web.Models.MyData
+
+@{
+    ViewData["Title"] = "Desarrollado por:";
+}
+<div>
+    Esta Aplicación fue creada con visual studio 2019, con C# /Aplication web ASP.NET Core,
+    el cual es una plantilla de proyecto para crear aplicaciones web y API web para windows,
+    linux y macOS con .NET Core o .NET Framerwork.
+    por un estudiante de la carrera de desarrollo de software del Instituto tecnológico Yavirac.
+    Es un muy satisfactorio aprendes nuevas cosas que pueden cambiar el mundo y dar soluciones a muchos problemas.
+</div>
+<br />
+<h1 class="titulo">@ViewData["Title"]</h1>
+<div class="contexto">
+    INFORMATION
+</div>
+<table class="table table-dark">
+    <tbody>
+        <tr>
+            <th scope="row">Nombre:</th>
+            <td colspan="2" class="table-active">@Model.Name</td>
+        </tr>
+        <tr>
+            <th scope="row">Apellido:</th>
+            <td colspan="2" class="table-active">@Model.LastName</td>
+        </tr>
+        <tr>
+            <th scope="row">Instituto Tecnológico:</th>
+            <td colspan="2" class="table-active">@Model.Institute</td>
+        </tr>
+        <tr>
+            <th scope="row">Nivel:</th>
+            <td colspan="2" class="table-active">@Model.Level</td>
+        </tr>
+        <tr>
+            <th scope="row">Ocupación:</th>
+            <td colspan="2" class="table-active">@Model.Activities</td>
+        </tr>
+        <tr>
+            <th scope="row">Contacto:</th>
+            <td colspan="2" class="table-active">@Model.Conctact</td>
+        </tr>
+        <tr>
+            <th scope="row">Publicación:</th>
+            <td colspan="2" class="table-active">@Model.Publicacion</td>
+        </tr>
+    </tbody>
+</table>
+<p>Development.HD</p>
