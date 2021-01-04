@@ -1,0 +1,18 @@
+﻿<Window x:Class="AppEscritorio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppEscritorio"
+        mc:Ignorable="d"
+        Title="Mi App" Height="634" Width="1016">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Margin="426,90,0,0" Text="INICIAR SESIÓN" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" Height="29" FontSize="24"/>
+        <Button Content="Ingesar" HorizontalAlignment="Left" Margin="583,374,0,0" VerticalAlignment="Top" Click="Button_Click" Width="103" Height="41"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="370,174,0,0" VerticalAlignment="Top" Height="34" Width="103" FontSize="22"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="370,256,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <TextBox x:Name="boxPassword" HorizontalAlignment="Left" Margin="370,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344" Height="43"/>
+        <TextBox x:Name="boxUser" HorizontalAlignment="Left" Margin="370,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344" Height="43"/>
+        <Button Content="Registrar" HorizontalAlignment="Left" Margin="414,374,0,0" VerticalAlignment="Top" Click="Button_Registrar" Width="103" Height="41"/>
+    </Grid>
+</Window>

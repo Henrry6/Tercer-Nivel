@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adt", "Adt\Adt.csproj", "{F2591A42-E5DF-4071-9482-F70534BEED5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdtApp", "AdtApp\AdtApp.csproj", "{CFBDC530-1F25-48B6-ACBB-3F212553D2CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2591A42-E5DF-4071-9482-F70534BEED5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2591A42-E5DF-4071-9482-F70534BEED5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2591A42-E5DF-4071-9482-F70534BEED5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2591A42-E5DF-4071-9482-F70534BEED5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFBDC530-1F25-48B6-ACBB-3F212553D2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFBDC530-1F25-48B6-ACBB-3F212553D2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFBDC530-1F25-48B6-ACBB-3F212553D2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFBDC530-1F25-48B6-ACBB-3F212553D2CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E163276-869E-4F4C-A6CE-BD5DD96437FD}
+	EndGlobalSection
+EndGlobal
