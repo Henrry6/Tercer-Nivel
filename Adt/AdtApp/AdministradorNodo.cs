@@ -5,14 +5,13 @@ namespace AdtApp
 {
     internal class AdministradorNodo
     {
-        public AdministradorNodo()
+        public void Imprimir(Nodo Nodo)
         {
-           
-        }
+            if (Nodo == null) return;
 
-        internal void Imprimir(Nodo raiz)
-        {
-            Console.WriteLine(raiz);
+            Console.WriteLine(Nodo.Nombre);
+            Imprimir(Nodo.Izquierdo);
+            Imprimir(Nodo.Derecho);
         }
     }
 }

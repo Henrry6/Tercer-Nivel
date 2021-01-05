@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adt", "Adt\Adt.csproj", "{F2591A42-E5DF-4071-9482-F70534BEED5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adt", "Adt\Adt.csproj", "{F2591A42-E5DF-4071-9482-F70534BEED5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdtApp", "AdtApp\AdtApp.csproj", "{CFBDC530-1F25-48B6-ACBB-3F212553D2CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdtApp", "AdtApp\AdtApp.csproj", "{CFBDC530-1F25-48B6-ACBB-3F212553D2CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasArbol", "PruebasArbol\PruebasArbol.csproj", "{558809EB-FC51-4438-9475-F6F64AD56C56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CFBDC530-1F25-48B6-ACBB-3F212553D2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFBDC530-1F25-48B6-ACBB-3F212553D2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFBDC530-1F25-48B6-ACBB-3F212553D2CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558809EB-FC51-4438-9475-F6F64AD56C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558809EB-FC51-4438-9475-F6F64AD56C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558809EB-FC51-4438-9475-F6F64AD56C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558809EB-FC51-4438-9475-F6F64AD56C56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
