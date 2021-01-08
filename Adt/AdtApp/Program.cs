@@ -36,8 +36,6 @@ namespace AdtApp
                         new Nodo("-2"),
                         new Nodo("-1"))));
             //Console.WriteLine("lA SUMA ES: " + an.SumarArbol(arbolOperaciones));
-
-
             //caracteres validos [0-9] numeros, . searador decimal
             // +- opreadores, para el nombre prop
             //Crear arbol apartir de un string
@@ -50,6 +48,48 @@ namespace AdtApp
 
 
         }
+
+        public static void contarNiveles()
+        {
+            NodoExt nodoA = new NodoExt("A");
+            NodoExt nodoB = new NodoExt("B");
+            NodoExt nodoC = new NodoExt("C");
+            NodoExt nodoD = new NodoExt("D");
+            NodoExt nodoE = new NodoExt("E");
+            NodoExt nodoF = new NodoExt("F");
+            NodoExt nodoG = new NodoExt("G");
+
+            NodoExt nodoN = new NodoExt("N");
+            NodoExt nodoX = new NodoExt("X");
+
+            //Raiz
+            nodoA.Hijos.Add(nodoB);
+            nodoA.Hijos.Add(nodoC);
+
+            //
+            nodoB.Hijos.Add(nodoD);
+            nodoB.Hijos.Add(nodoE);
+            //
+            nodoC.Hijos.Add(nodoF);
+            nodoC.Hijos.Add(nodoG);
+            //
+            nodoD.Hijos.Add(new NodoExt("H"));
+            nodoD.Hijos.Add(new NodoExt("I"));
+            nodoE.Hijos.Add(new NodoExt("J"));
+            nodoE.Hijos.Add(new NodoExt("K"));
+
+            nodoF.Hijos.Add(new NodoExt("L"));
+            nodoF.Hijos.Add(new NodoExt("M"));
+            nodoG.Hijos.Add(nodoN);
+            nodoG.Hijos.Add(new NodoExt("Ñ"));
+
+            nodoN.Hijos.Add(nodoX);
+
+            NodoExt.ImprmirArbolMultiplesHijos(nodoA);
+
+            Console.WriteLine("EL ARBOL TIENE {0} NIVELES !!!", NodoExt.ContarNiveles(nodoA));
+        }
+
 
     }
 }

@@ -66,5 +66,47 @@ namespace PruebasArbol
             Assert.AreEqual(resultadoEsperado, resultado);
         }
 
+        [TestMethod]
+        public void TestContarNiveles()
+        {
+            NodoExt nodoA = new NodoExt("A");
+            NodoExt nodoB = new NodoExt("B");
+            NodoExt nodoC = new NodoExt("C");
+            NodoExt nodoD = new NodoExt("D");
+            NodoExt nodoE = new NodoExt("E");
+            NodoExt nodoF = new NodoExt("F");
+            NodoExt nodoG = new NodoExt("G");
+
+            NodoExt nodoN = new NodoExt("N");
+            NodoExt nodoX = new NodoExt("X");
+
+            //Raiz
+            nodoA.Hijos.Add(nodoB);
+            nodoA.Hijos.Add(nodoC);
+
+            //
+            nodoB.Hijos.Add(nodoD);
+            nodoB.Hijos.Add(nodoE);
+            //
+            nodoC.Hijos.Add(nodoF);
+            nodoC.Hijos.Add(nodoG);
+            //
+            nodoD.Hijos.Add(new NodoExt("H"));
+            nodoD.Hijos.Add(new NodoExt("I"));
+            nodoE.Hijos.Add(new NodoExt("J"));
+            nodoE.Hijos.Add(new NodoExt("K"));
+
+            nodoF.Hijos.Add(new NodoExt("L"));
+            nodoF.Hijos.Add(new NodoExt("M"));
+            nodoG.Hijos.Add(nodoN);
+            nodoG.Hijos.Add(new NodoExt("Ñ"));
+
+            nodoN.Hijos.Add(nodoX);
+
+            int resultadoEsperado = 5;
+            int resultado = NodoExt.ContarNiveles(nodoA);
+
+            Assert.AreEqual(resultadoEsperado, resultado);
+        }
     }
 }
