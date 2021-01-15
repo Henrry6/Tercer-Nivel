@@ -26,3 +26,12 @@ En la carpeta  __AplicativoDesktop__  *se encuentra un diseño de loguin donde s
 # TAREA 6
 ## Desarrollar un arbol
 En la carpeta  __Adt__ *aprendimos a como usar los nodos, donde se calculan cuantos nodos, hojas y niveles existen.*
+
+# TAREA 7
+## Hilo pool
+En la carpeta  __Hilo__ *Desarrolle un ejercicio utilizando ThreadPool donde a la final se guardan lo hilos recorridos en una carpeta*
+
+# TAREA 8
+## IndependecyInyection
+En la carpeta  __IndependecyInyection__ *Implementación de una libreria llamada Ninject*
+
