@@ -7,9 +7,9 @@ namespace DependecyInyection
 {
     public class Fussion : NinjectModule
     {
-        public override void load()
+        public override void Load()
         {
-            Bind<IArmas>().To<Armasx>();
+            Bind<IArma>().To<ArmaX>();
         }
     }
 }

@@ -1,29 +1,33 @@
 ﻿using System;
 using Interface;
-using Personajes;
 
 namespace Armas1
 {
-    public class Armasx : IArmas
+    public class ArmaX : IArma
     {
-       public bool Disparar(IronMan iroman)
+       public bool Disparar(IPersonaje personaje)
         {
             Console.WriteLine("IronMan esta disparando");
             return true;
         }
-        public bool Golpear(IronMan iroman)
+        public bool Golpear(IPersonaje personaje)
         {
-            Console.WriteLine("IronMan esta disparando");
+            Console.WriteLine("{0} esta golpeando", personaje.Nombre);
             return true;
         }
-        public bool Disparar(Hulk hulk)
+
+        
+    }
+    public class Escopeta : IArma
+    {
+        public bool Disparar(IPersonaje personaje)
         {
-            Console.WriteLine("IronMan esta disparando");
-            return true;
+            Console.WriteLine("{0} esta golpeando, poom!!", personaje.Nombre);
+            return true; 
         }
-        public bool Golpear(Hulk hulk)
+        public bool Golpear(IPersonaje personaje)
         {
-            Console.WriteLine("IronMan esta disparando");
+            Console.WriteLine("{0} esta golpeando", personaje.Nombre);
             return true;
         }
     }

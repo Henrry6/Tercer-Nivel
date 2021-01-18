@@ -11,16 +11,19 @@ namespace Di
     {
         static void Main(string[] args)
         {
-            IronMan ironman = new IronMan("IronMan", "pisparar");
-             Hulk hulk = new Hulk("Hulk", "Golpear");
-
+            Console.WriteLine("Ingrese un nombre");
+            var name = Console.ReadLine();
+            Console.WriteLine("Ingrese una habilidad");
+            var skill = Console.ReadLine();
+            //IPersonaje personaje = new PersonajeNew(name, skill)
             var kernel = new StandardKernel();
-            kernel.Bind<IArmas>().To<Armasx>();
-            var usuario = kernel.Get<Usuario>();
-            usuario.Jugar(ironman, hulk);
-            IArmas armas = new Armasx();
-            Usuario user = new Usuario(armas);
-            user.Jugar(ironman, hulk);
+            kernel.Bind<IArma>().To<ArmaX>();
+            var usuario = kernel.Get<Escopeta>();
+            PersonajeNew personaje = new PersonajeNew(name, skill);
+            Console.WriteLine(personaje);
+            IArma arma = new ArmaX();
+            Usuario user = new Usuario(arma);
+            usuario.Disparar(name);
         }
 
     }

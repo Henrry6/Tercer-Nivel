@@ -4,26 +4,23 @@ using System;
 
 namespace DoAction
 {
-    class Usuario
+    public class Usuario 
     {
-        public IArmas Armas { get; set; }
+        public IArma Arma { get; set; }
 
-        public Usuario(IArmas armas)
+        public Usuario(IArma arma)
         {
-            this.Armas = armas;
+            this.Arma = arma;
         }
-
-
-        public string Jugar(IronMan ironman, Hulk hulk)
+        public string Jugar(IPersonaje personaje)
         {
-            Armas.Disparar(ironman);
-            Armas.Golpear(hulk);
-
-
+            Arma.Disparar(personaje);
+            Arma.Golpear(personaje);
             return string.Format("El personaje se llama {0} y tiene la habilidad de {1}"
-                , ironman.Nombre
-                , ironman.Habilidad);
+                , personaje.Nombre
+                , personaje.Habilidad);
 
         }
+
     }
 }

@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Inyeccion\Interface.csproj" />
-    <ProjectReference Include="..\Personajes\Personajes.csproj" />
   </ItemGroup>
 
 </Project>

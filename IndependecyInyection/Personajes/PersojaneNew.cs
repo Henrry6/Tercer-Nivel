@@ -1,14 +1,14 @@
-﻿using Interface;
+﻿using System;
 
 namespace Personajes
-{   
-    public class IronMan : IPersonaje
+{
+    public class PersonajeNew
     {
         public string Nombre { get; set; }
 
         public string Habilidad { get; set; }
 
-        public IronMan(string nombre, string habilidad)
+        public PersonajeNew(string nombre, string habilidad)
         {
             Nombre = nombre;
             Habilidad = habilidad;

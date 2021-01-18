@@ -1,14 +1,14 @@
-﻿using System;
-using Personajes;
-
+﻿
 namespace Interface
 {
-    public interface IArmas
+    public interface IArma
     {
-        bool Disparar(IronMan ironman);
-        bool Golpear(IronMan ironman);
-
-        bool Disparar(Hulk hulk);
-        bool Golpear(Hulk hulk);
+        bool Disparar(IPersonaje personaje);
+        bool Golpear(IPersonaje personaje);
+    }
+    public interface IPersonaje
+    {
+        string Nombre { get; }
+        string Habilidad { get; }
     }
 }
