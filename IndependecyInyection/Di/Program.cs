@@ -4,6 +4,7 @@ using Ninject;
 using Personajes;
 using DoAction;
 using System;
+using System.Reflection;
 
 namespace Di
 {
@@ -13,17 +14,18 @@ namespace Di
         {
             Console.WriteLine("Ingrese un nombre");
             var name = Console.ReadLine();
+
             Console.WriteLine("Ingrese una habilidad");
             var skill = Console.ReadLine();
-            //IPersonaje personaje = new PersonajeNew(name, skill)
+
             var kernel = new StandardKernel();
-            kernel.Bind<IArma>().To<ArmaX>();
-            var usuario = kernel.Get<Escopeta>();
+            kernel.Load(Assembly.GetExecutingAssembly());
+            IArma nuevaArma = kernel.Get<IArma>();
+
             PersonajeNew personaje = new PersonajeNew(name, skill);
-            Console.WriteLine(personaje);
-            IArma arma = new ArmaX();
-            Usuario user = new Usuario(arma);
-            usuario.Disparar(name);
+            Usuario user = new Usuario(nuevaArma);
+            user.Jugar(personaje);
+           
         }
 
     }

@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Interface;
+using System;
 
 namespace Personajes
 {
-    public class PersonajeNew
+    public class PersonajeNew : IPersonaje
     {
         public string Nombre { get; set; }
 

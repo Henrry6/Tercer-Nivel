@@ -7,7 +7,7 @@ namespace Armas1
     {
        public bool Disparar(IPersonaje personaje)
         {
-            Console.WriteLine("IronMan esta disparando");
+            Console.WriteLine(personaje.Nombre, "esta disparando");
             return true;
         }
         public bool Golpear(IPersonaje personaje)
