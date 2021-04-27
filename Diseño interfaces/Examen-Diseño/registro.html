@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <h1>Formulario de registro</h1>
+  <div >
+    <div class="formulario">
+      <input class="input" type="text" placeholder="Nombres">
+      <br>
+      <input class="input" type="text" placeholder="Apellido">
+      <br>
+      <input class="input" type="text" placeholder="Ciudad">
+      <br>
+      <input class="input" type="text" placeholder="Telefono">
+      <br>
+      <input class="input" type="text" placeholder="E-mail">
+      <br>
+      <input class="input" type="password" placeholder="Contraseña">
+      <br>
+      <button onclick="myFunction()">Enviar</button>
+    </div>
+    <div id="snackbar">Registro exitoso</div>
+    <br>
+  </div>
+  <div>
+    <button id="obj1" onclick="window.location.href='./loguin.html'">Iniciar sesión</button>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      document.getElementById('obj1').style.display='block'
+    }
+  </script>
+  </body>
+  </html>

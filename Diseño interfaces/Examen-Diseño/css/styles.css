@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  background-color: #1c6161; }
+
+h1 {
+  text-align: center; 
+  margin-top: 50px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 38px 20px 38px;
+  width: 300px; 
+}
+
+.input {
+  border-radius: 5px;
+  background-color: beige; 
+  height: 25px;
+  width: 300px;
+  padding-left: 8px;
+  margin-top: 5px;
+}
+
+label {
+  background-color: rgb(12 115 115 / 10%);
+  color: #fff;
+  font-weight: 2px;
+}
+
+button {
+  height: 35px;
+  width: 100px;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover{
+  background-color: black;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px; 
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#obj1 {
+  display: none;
+  height: 35px;
+  width: 115px;
+  margin-left: auto;
+  margin-right: 120px;
+  margin-top: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+#obj1:hover{
+  background-color: black;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
