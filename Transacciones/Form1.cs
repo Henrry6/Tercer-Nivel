@@ -13,7 +13,7 @@ namespace Transacciones
 {
     public partial class Form1 : Form
     {
-        string parametros = "Server=localhost; Port=5432; User Id=postgres; Password=192021; Database=SystemBank";
+        string parametros = "Server=localhost; Port=5432; User Id=postgres; Password=12345; Database=SystemBank";
         string query = "";
         string numero_cuenta1 = "";
         string numero_cuenta2 = "";
